@@ -4,7 +4,7 @@ PUB_VALUES = {
     "fields": {
         "stationid": {
             "type": "integer",
-            "values": list(range(1, 101))  # 100 possible stations
+            "values": list(range(1, 101)) 
         },
         "city": {
             "type": "string",
@@ -41,7 +41,7 @@ PUB_VALUES = {
 SUB_VALUES = {
     "field_weights": {
         "stationid": 0.1,  # 10%
-        "city": 0.9,      # 20%
+        "city": 0.9,      # 90%
         "temp": 0.2,      # 20%
         "rain": 0.1,      # 10%
         "wind": 0.1,      # 10%
@@ -49,7 +49,7 @@ SUB_VALUES = {
         "date": 0.2       # 20%
     },
     "equality_weights": {
-        "temp": 0.9  # 60% of subscriptions with direction use operator =
+        "temp": 0.9  
     },
     "operators": {
         "integer": ["=", "<", "<=", ">", ">="],
